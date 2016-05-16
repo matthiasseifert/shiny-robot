@@ -30,8 +30,6 @@ class FileListUtils
   def self.getDirectoryListRecursively(parentDirectory)
     return getFileListRecursively(parentDirectory,"");
   end
-
-  private
   
   #If the last character of the path given as a parameter is not
   # the system's file delimiter this method will return
@@ -43,7 +41,6 @@ class FileListUtils
       return path + systemDelimiter;
     end
     return path;
-
   end
 end
 
